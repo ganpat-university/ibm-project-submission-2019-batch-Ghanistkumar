@@ -13,7 +13,7 @@ change directory to /etc/snort/snort.conf
 # value of DEBIAN_SNORT_HOME_NET s defined in the
 ipvar HOME_NET 192.168.xx.x/24
 
-#cd to /etc/snort/rules/local.rules to add your custom rules
+#cd to /etc/snort/rules/local.rules to add your custom rules 
 alert icmp any any -> $HOME_NET any ( msg:"ICMP Ping Detected";  sid:19162101; rev:1;)
 
 #to run the snort
